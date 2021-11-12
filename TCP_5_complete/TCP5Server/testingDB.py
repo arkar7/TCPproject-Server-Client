@@ -1,12 +1,12 @@
 import pymongo
 
-uri = "mongodb+srv://root:toor@databaseserver.rgq5c.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+uri = "mongodb+srv://root:toor@cluster0.iqi0b.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 
 connection = pymongo.MongoClient(uri)
 database = connection["myDB"]
 collection = database["DatabaseServer"]
 
-data = {'WinHtut': 'CrazyCoder', 'age': 27, 'Hobby': 'BuildingTools'}
+data = {'Arkar': 'CrazyCoder', 'age': 27, 'Hobby': 'BuildingTools'}
 try:
     collection.insert_one(data)
     print("Data Successfully inserted")
