@@ -4,7 +4,7 @@ class ToFindData:
 
     def dbFinder(self)-> str:
         data = "HHH"
-        if self.inputData == "WINHTUT":
+        if self.inputData == "ARKAR":
             data:str ="Hello"
 
         return data
